@@ -1,0 +1,11 @@
+
+<div class="container text-center">
+  <div class="d-flex justify-content-around align-items-center">
+    <h1> <%= @article.title %> </h1>  
+    <%= link_to "EDIT", edit_article_path %>
+    <%= link_to "DELETE", article_path(@article), method: :delete, data:{ confirm: "Tem certeza?"} %>
+  </div>
+
+  <p>  <%= @article.content %>  </p>
+</div>
+
